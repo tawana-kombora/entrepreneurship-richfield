@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <style>
+        /* <tawana start> */
+        /* 
+        #530453 - purple
+        #269ded - bright blue
+        #030303 - black
+        #273445 - greyish blue
+        #940226 - pinkish
+        #5c6b8c - faded blue
+         */
+         body {
+            background-color: #030303;
+         }
+        .cards-container {
+            margin-block: 25px;
+            margin-inline: auto;
+            max-width: 90%;
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            column-gap: 25px;
+            row-gap: 75px;
+        }
+        .card {
+            text-transform: uppercase;
+            width: 20rem;
+            border-radius: 2%;
+
+            box-shadow: 1px 1px 2.5px 1px #273445,  -1px -1px 2.5px 1px #273445;
+            flex: 0 1 auto;
+        }
+        .card:hover {
+            box-shadow: 1px 1px 20px #273445, -1px -1px 20px #273445;
+        }
+        .card__image {
+            display: block;
+            object-fit: cover;
+
+            border-top-left-radius: 1.5%;
+            border-top-right-radius: 1.5%;
+
+            height: 338px;
+            max-width: 100%;
+        }
+
+        .bottomHalf {
+            background-color: #273445;
+            display: flex;
+            justify-content: center;
+
+            /* animation: glow 1s ease-in-out infinite alternate; */
+            padding-block: 15px;
+            border-bottom-left-radius: 1.5%;
+            border-bottom-right-radius: 1.5%;
+        }
+        .bottomHalf a {
+            display: block;
+            text-align: center;
+            width: fit-content;
+            text-decoration: none;
+
+            padding: 1rem 1rem;
+            /* margin: 0 auto; */
+
+            color: #fff;
+            font-weight: bolder;
+            font-size: 14.5px;
+        }
+        .bottomHalf a:hover  {
+            text-decoration: underline;
+        }
+        /* <tawana end> */
+
+        /* <lesedi start> */
+
+            .navbar{
+    background: #363889;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 999;
+    width: 100%;
+    max-width: 1300;
+    margin: 0 auto;
+    padding:0 50px
+}
+
+.navbar_logo{
+    background-color: #b675d0fd;
+       background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    -moz-text-fill-color:transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none ;
+    font-size: 2rem;
+}
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar_items{
+    height: 80px;
+
+}
+.navbar_links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius:  4px;
+    background-color: #628cf7;
+    color: #fff;
+}
+.button:hover{
+    background: #924fb9;
+    transition: all 0.3s ease;
+}
+
+.navbar_links:hover{
+    color:#a14de2;
+    transition: all 0.3s ease;
+}
+
+        /* <lesedi end */
+    </style>
+
+</head>
+<body>
+
+    <!-- lesedi start> -->
+
+    <nav class="navbar">
+        <div class="nav_container">
+        <!-- <a href="/" class="navbar_logo"><img src="./logo3.jpeg" alt="Cheat Code" width="80%" height="80%"></a> -->
+        <a href="/" class="navbar_logo">Cheat Code</a>
+       
+        <ul class="navbar_menu">
+        <li class="navbar_items"><a href="Home Page.html" class="navbar_links">Home</a></li>
+        <li class="navbar_items"><a href="" class="navbar_links">About</a></li> <!-- ENTER LINK TO PAGE + CREATE RESPECTIVE PAGE-->
+        <li class="navbar_items"><a href="" class="navbar_links">Product</a></li> <!-- ENTER LINK TO PAGE + CREATE RESPECTIVE PAGE-->
+        <li class="navbar_items"><a href="Review.html" class="navbar_links">Review</a></li>
+        <li class="navbar_btn"><a href="" class="button">Contact Us</a></li> <!-- ENTER LINK TO PAGE + CREATE RESPECTIVE PAGE-->
+       
+        </ul>
+    </div>
+    </nav>
+
+    <!-- <lesedi end> -->
+
+        <!-- Start of Cards Taiwana-->
+        <section class="cards-container">
+            <div class="card M1">
+                
+                <div class="topHalf">
+                    <img class="card__image" src="assets/imgs/M1Chip.jpg" alt="computer chip, specifically apples M1 chip">
+                </div>
+                <div class="bottomHalf">
+                    <a href="Review.html">Open Reviews &#8594;</a>
+                </div>
+            </div>
+            <div class="card drgn-keybrd">
+                
+                <div class="topHalf">
+                    <img class="card__image" src="assets/imgs/dragon-keyboard.jpg" alt="red dragon keyboard">
+                </div>
+                <div class="bottomHalf">
+                    <a href="Review.html">Open Reviews &#8594;</a>
+                </div>
+            </div>
+            <div class="card graphics-card">
+                
+                <div class="topHalf">
+                    <img class="card__image" src="assets/imgs/graphics-card.jpg" alt="geforce rtx 2060 graphics card">
+                </div>
+                <div class="bottomHalf">
+                    <a href="Review.html">Open Reviews &#8594;</a>
+                </div>
+            </div>
+            <div class="card headphones">
+                
+                <div class="topHalf">
+                    <img class="card__image" src="assets/imgs/heaphones.webp" alt="headphones">
+                </div>
+                <div class="bottomHalf">
+                    <a href="Review.html">Open Reviews &#8594;</a>
+                </div>
+            </div>
+            <div class="card ram-sticks">
+                
+                <div class="topHalf">
+                    <img class="card__image" src="assets/imgs/ram-sticks.jpg" alt="ram-sticks">
+                </div>
+                <div class="bottomHalf">
+                    <a href="Review.html">Open Reviews &#8594;</a>
+                </div>
+            </div>
+            <div class="card magsafe">
+                
+                <div class="topHalf">
+                    <img class="card__image" src="assets/imgs/magsafe.jpg" alt="magsafe macbook adapter">
+                </div>
+                <div class="bottomHalf">
+                    <a href="Review.html">Open Reviews &#8594;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- end of Cards Taiwana-->
+    
+        <!-- <start karabo> -->
+    
+    <footer class="footer">
+
+        <h1><center>Cheat Code</center></h1>
+
+    <div class="container bottom_border">
+    <div class="row">
+    <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+    
+    <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    <p><i class="fa fa-location-arrow"></i>193 Bryanston Drive</p>
+    <p><i class="fa fa-phone"></i> +27 11 493 3571</p>
+    <p><i class="fa fa fa-envelope"></i> cheatcode@cheatcode.com</p>
+    
+    
+    </div>
+    
+    
+    <div class=" col-sm-4 col-md  col-6 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Get Help</h5>
+    <ul class="footer_ul_amrc">
+    <li><a href="">FAQ</a></li>
+    <li><a href="">Shipping</a></li>
+    <li><a href="">Returns</a></li>
+    <li><a href="">Order Status</a></li>
+    <li><a href="">Payment Options</a></li>
+    </ul>
+    </div>
+    
+    
+    <div class=" col-sm-4 col-md  col-6 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Order Online</h5>
+    <ul class="footer_ul_amrc">
+    <li><a href="">Laptops</a></li>
+    <li><a href="">Desktops</a></li>
+    <li><a href="">Headphones</a></li>
+    <li><a href="">Motherboards</a></li>
+    <li><a href="">Cellphones</a></li>
+    </ul>
+    
+    </div>
+    
+    
+    <div class=" col-sm-4 col-md  col-12 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+    <ul class="social_footer_ul">
+        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter"></i></a></li> 
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </ul>
+    </div>
+    
+    <div class="container">
+    <ul class="foote_bottom_ul_amrc">
+    <li><a href="Home Page.html">Home</a></li>
+    <li><a href="">About Us</a></li>
+    <li><a href="Review.html">Review</a></li>
+    <li><a href="">Pricing</a></li>
+    <li><a href="">Contact</a></li>
+    </ul>
+    
+    <p class="text-center">Copyright @2022 | Designed With by Richfield Bryanston 1st years 2022 <a href="#">Tech Gods</a></p>
+    
+
+
+    </div>
+    
+    </footer>
+    
+    <!-- <karabo end> -->
+</body>
