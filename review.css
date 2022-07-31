@@ -33,12 +33,12 @@ body {
 .flex {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .grid {
     display: grid;
-    place-items: center;
+    /* place-items: center; */
     grid-template-columns: repeat(2, 1fr);
 }
 .container {
@@ -49,17 +49,23 @@ body {
 .navbar {
     font-size: var(--20px);
 
-    height: var(--80px);
+    padding-block: 20px;
+    width: 100%;
     background-color: var(--faded-dark-blue);
 }
 .nav {
     height: 100%;
-    /* outline: 1px solid blue; */
+    width: 100%;
+    justify-content: space-between;
 }
 .nav h1 {
     font-weight: bold;
     font-size: var(--36px);
     color: var(--dark-purplish);
+}
+.nav .nav-list,
+.navbar .nav {
+    gap: 20px;
 }
 .nav-list .list-item {
     list-style-type: none;
@@ -72,7 +78,7 @@ body {
 }
 .nav-list .nav-btn {
     background-color: var(--faded-light-blue);
-    padding: 10px 20px;
+    padding: 10px;
 
     border: none;
     border-radius: 4px;
@@ -91,21 +97,25 @@ body {
 
 .product-description .container {
     overflow: visible;
+    gap: 50px;
 }
-.grid-item-1, 
-.grid-item-2 {
+.flex-item-1, 
+.flex-item-2 {
     position: relative;
     top: 50px;
+    flex: 1 1 500px;
     /* outline: 2px solid green; */
 }
-.grid img {
-    box-shadow: 7px 7px 7px rgb(0 0 0 / 20%);
+.flex img {
+    box-shadow: 7px 7px 10px rgb(0 0 0 / 20%);
+    object-fit: cover;
+    width: 100%;
 }
-.grid-item-2 {
+.flex-item-2 {
     text-align: justify;
-    padding-inline: 70px;
+    padding: 70px;
 }
-.grid-item-2 h3 {
+.flex-item-2 h3 {
     font-size: var(--32px);
     line-height: 1.2;
     font-weight: 600;
@@ -117,4 +127,23 @@ body {
 /* reviews section */
 .reviews {
     margin-top: 150px;
+    margin-bottom: 150px;
+}
+.cards {
+    gap: 50px;
+}
+.card {
+    flex: 1 1 300px;
+    padding-block: 30px;
+    padding-inline: 50px;
+    text-align: left;
+
+    border-radius: 10px;
+    box-shadow: -7px -7px 10px rgb(0 0 0 / 20%), 7px 7px 10px rgb(0 0 0 / 20%);
+}
+.card h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fff;
 }
