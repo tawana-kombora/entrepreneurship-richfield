@@ -74,6 +74,9 @@
             font-size: var(--36px);
             color: var(--dark-purplish);
         }
+        .nav h1 {
+            cursor: pointer;
+        }
         .nav .nav-list,
         .navbar .nav {
             gap: 20px;
@@ -145,22 +148,19 @@
         }
         .card {
             flex: 1 1 300px;
-            padding-block: 30px;
-            padding-inline: 50px;
             text-align: left;
 
             border-radius: 10px;
-            box-shadow: -7px -7px 10px rgb(0 0 0 / 20%), 7px 7px 10px rgb(0 0 0 / 20%);
+            box-shadow: -7px -7px 10px rgb(0 0 0 / .2), 7px 7px 10px rgb(0 0 0 / .2);
         }
         .card h3 {
             text-align: center;
             padding-bottom: 10px;
             margin-bottom: 15px;
-            border-bottom: 2px solid #fff;}
-
-            /* Cards start */
-
-            .cards-container {
+            border-bottom: 2px solid #fff;
+        }
+        /* Cards start */
+        .cards-container {
             margin-block: 25px;
             margin-inline: auto;
             max-width: 90%;
@@ -173,33 +173,31 @@
         }
         .card {
             text-transform: uppercase;
-            width: 20rem;
+            /* width: 20rem; */
             border-radius: 1.5%;
 
-            box-shadow: 1px 1px 2.5px 1px #273445,  -1px -1px 2.5px 1px #273445;
-            flex: 0 1 auto;
+            box-shadow: -9px -9px 10px rgb(20, 20, 20, .1), 9px 9px 10px rgb(20, 20, 20, .1);
+            flex: 1 1 auto;
         }
         .card:hover {
-            box-shadow: 1px 1px 20px #273445, -1px -1px 20px #273445;
+            box-shadow: -14px -14px 40px rgb(70, 70, 70, .4), 14px 14px 40px rgb(70, 70, 70, .4);
         }
         .card__image {
             display: block;
             object-fit: cover;
            
+            border-radius: 1.5%;
 
-            border-top-left-radius: 1.5%;
-            border-top-right-radius: 1.5%;
-
-            height: 338px;
-            max-width: 100%;
+            height: 300px;
+            width: 100%;
         }
 
-        .bottomHalf {
+        /* .bottomHalf {
             background-color: #273445;
             display: flex;
             justify-content: center;
 
-            /* animation: glow 1s ease-in-out infinite alternate; */
+            /* animation: glow 1s ease-in-out infinite alternate;
             padding-block: 15px;
             border-bottom-left-radius: 1.5%;
             border-bottom-right-radius: 1.5%;
@@ -211,7 +209,7 @@
             text-decoration: none;
 
             padding: 1rem 1rem;
-            /* margin: 0 auto; */
+            /* margin: 0 auto;
 
             color: #fff;
             font-weight: bolder;
@@ -219,7 +217,7 @@
         }
         .bottomHalf a:hover  {
             text-decoration: underline;
-        }
+        } */
 
         .col_white_amrc { 
     color:#FFF;
@@ -249,58 +247,40 @@
 
        <!-- Start of Cards Taiwana-->
        <section class="cards-container">
-        <div class="card M1">
+        <div class="card">
             
             <div class="topHalf">
                 <img class="card__image" src="Bryanston.webp" alt="Bryanston">
             </div>
-            <div class="bottomHalf">
-                <a href="./page-review.html">Open Reviews &#8594;</a>
-            </div>
         </div>
-        <div class="card drgn-keybrd">
+        <div class="card">
             
             <div class="topHalf">
                 <img class="card__image" src="Durban.jpeg" alt="Park Square">
             </div>
-            <div class="bottomHalf">
-                <a href="./page-review.html">Open Reviews &#8594;</a>
-            </div>
         </div>
-        <div class="card graphics-card">
+        <div class="card">
             
             <div class="topHalf">
                 <img class="card__image" src="CPT.jpeg" alt="Cape Town">
             </div>
-            <div class="bottomHalf">
-                <a href="./page-review.html">Open Reviews &#8594;</a>
-            </div>
         </div>
-        <div class="card headphones">
+        <div class="card">
             
             <div class="topHalf">
                 <img class="card__image" src="Kempton.webp" alt="Kempton">
             </div>
-            <div class="bottomHalf">
-                <a href="./page-review.html">Open Reviews &#8594;</a>
-            </div>
         </div>
-        <div class="card ram-sticks">
+        <div class="card">
             
             <div class="topHalf">
                 <img class="card__image" src="Joburg.jpeg.opdownload" alt="Johannesburg">
             </div>
-            <div class="bottomHalf">
-                <a href="./page-review.html">Open Reviews &#8594;</a>
-            </div>
         </div>
-        <div class="card magsafe">
+        <div class="card">
             
             <div class="topHalf">
                 <img class="card__image" src="PT.webp" alt="Pretoria">
-            </div>
-            <div class="bottomHalf">
-                <a href="./page-review.html">Open Reviews &#8594;</a>
             </div>
         </div>
     </section>
