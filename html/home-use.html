@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Bryanston</title>
+    <link rel="stylesheet" href="Dummy-Footer.css">
+    <link rel="shortcut icon" href="Favi.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="review.css"> -->
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        :root {
+            /* font-family */
+            --ff-sans-serif: "lato", sans-serif;
+
+            /* font-size */
+            --16px: 1rem;
+            --20px: 1.25rem;
+            --22px: 1.38rem;
+            --24px: 1.5rem;
+            --28px: 1.75rem;
+            --32px: 2rem;
+            --36px: 2.3rem;
+            --70px: 4.4rem;
+            --80px: 5rem;
+
+            /* color */
+            --faded-light-blue: #628cf8;
+            --faded-dark-blue: #373889;
+            --dark-purplish: #924fb9;
+            --purplish: #a14de2;
+        }
+        body {
+            color: #fff;
+            background-color: #131313;
+            font-size: var(--16px);
+            font-family: var(--ff-sans-serif);
+        }
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .grid {
+            display: grid;
+            /* place-items: center; */
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .container {
+            padding-inline: 50px;
+            /* outline: 3px solid green; */
+        }
+        /* navbar */
+        .navbar {
+            font-size: var(--20px);
+
+            padding-block: 20px;
+            width: 100%;
+            background-color: var(--faded-dark-blue);
+        }
+        .nav {
+            height: 100%;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .nav h1 {
+            font-weight: bold;
+            font-size: var(--36px);
+            color: var(--dark-purplish);
+        }
+        .nav .nav-list,
+        .navbar .nav {
+            gap: 20px;
+        }
+        .nav-list .list-item {
+            list-style-type: none;
+            margin: 0 10px;
+            flex: 1 1 auto;
+        }
+        .nav-list a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .nav-list .nav-btn {
+            background-color: var(--faded-light-blue);
+            padding: 10px;
+
+            border: none;
+            border-radius: 4px;
+        }
+        .nav-list .list-item:hover {
+            color: var(--dark-purplish);
+            text-decoration: underline;
+        }
+        .nav-list .nav-btn:hover {
+            color: var(--faded-dark-blue);
+            background-color: var(--purplish);
+            transition: all 0.3s ease;
+        }
+
+        /* product-description */
+
+        .product-description .container {
+            overflow: visible;
+            gap: 50px;
+        }
+        .flex-item-1, 
+        .flex-item-2 {
+            position: relative;
+            top: 50px;
+            flex: 1 1 500px;
+            /* outline: 2px solid green; */
+        }
+        .flex img {
+            box-shadow: 7px 7px 10px rgb(0 0 0 / 20%);
+            object-fit: cover;
+            width: 100%;
+        }
+        .flex-item-2 {
+            text-align: justify;
+            padding: 70px;
+        }
+        .flex-item-2 h3 {
+            font-size: var(--32px);
+            line-height: 1.2;
+            font-weight: 600;
+
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* reviews section */
+        .reviews {
+            margin-top: 150px;
+            margin-bottom: 150px;
+        }
+        .cards {
+            gap: 50px;
+        }
+        .card {
+            flex: 1 1 300px;
+            padding-block: 30px;
+            padding-inline: 50px;
+            text-align: left;
+
+            border-radius: 10px;
+            box-shadow: -7px -7px 10px rgb(0 0 0 / 20%), 7px 7px 10px rgb(0 0 0 / 20%);
+        }
+        .card h3 {
+            text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #fff;}
+
+            /* Cards start */
+
+            .cards-container {
+            margin-block: 25px;
+            margin-inline: auto;
+            max-width: 90%;
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            column-gap: 25px;
+            row-gap: 75px;
+        }
+        .card {
+            text-transform: uppercase;
+            width: 20rem;
+            border-radius: 1.5%;
+
+            box-shadow: 1px 1px 2.5px 1px #273445,  -1px -1px 2.5px 1px #273445;
+            flex: 0 1 auto;
+        }
+        .card:hover {
+            box-shadow: 1px 1px 20px #273445, -1px -1px 20px #273445;
+        }
+        .card__image {
+            display: block;
+            object-fit: cover;
+           
+
+            border-top-left-radius: 1.5%;
+            border-top-right-radius: 1.5%;
+
+            height: 338px;
+            max-width: 100%;
+        }
+
+        .bottomHalf {
+            background-color: #273445;
+            display: flex;
+            justify-content: center;
+
+            /* animation: glow 1s ease-in-out infinite alternate; */
+            padding-block: 15px;
+            border-bottom-left-radius: 1.5%;
+            border-bottom-right-radius: 1.5%;
+        }
+        .bottomHalf a {
+            display: block;
+            text-align: center;
+            width: fit-content;
+            text-decoration: none;
+
+            padding: 1rem 1rem;
+            /* margin: 0 auto; */
+
+            color: #fff;
+            font-weight: bolder;
+            font-size: 14.5px;
+        }
+        .bottomHalf a:hover  {
+            text-decoration: underline;
+        }
+
+        .col_white_amrc { 
+    color:#FFF;
+}
+            
+            /* Cards end */
+        
+    </style>
+</head>
+<body>
+
+    <section class="container navbar">
+        <nav class="nav flex">
+            <h1>Cheat Code</h1>
+            <div>
+                <!-- insert following in NAV BAR Home, Meet our Start-ups, Events, Partners, Contact Us -->
+                <ul class="nav-list flex">
+                    <li class="list-item"><a href="index.html">Home</a></li>
+                    <li class="list-item"><a href="#">Meet Start-Ups</a></li>
+                    <li class="list-item"><a href="page-review.html">Events</a></li>
+                    <li class="list-item"><a href="#">Partners</a></li>
+                    <li class="list-item"><a href="#" class="nav-btn">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+       <!-- Start of Cards Taiwana-->
+       <section class="cards-container">
+        <div class="card M1">
+            
+            <div class="topHalf">
+                <img class="card__image" src="Bryanston.webp" alt="Bryanston">
+            </div>
+            <div class="bottomHalf">
+                <a href="./page-review.html">Open Reviews &#8594;</a>
+            </div>
+        </div>
+        <div class="card drgn-keybrd">
+            
+            <div class="topHalf">
+                <img class="card__image" src="Durban.jpeg" alt="Park Square">
+            </div>
+            <div class="bottomHalf">
+                <a href="./page-review.html">Open Reviews &#8594;</a>
+            </div>
+        </div>
+        <div class="card graphics-card">
+            
+            <div class="topHalf">
+                <img class="card__image" src="CPT.jpeg" alt="Cape Town">
+            </div>
+            <div class="bottomHalf">
+                <a href="./page-review.html">Open Reviews &#8594;</a>
+            </div>
+        </div>
+        <div class="card headphones">
+            
+            <div class="topHalf">
+                <img class="card__image" src="Kempton.webp" alt="Kempton">
+            </div>
+            <div class="bottomHalf">
+                <a href="./page-review.html">Open Reviews &#8594;</a>
+            </div>
+        </div>
+        <div class="card ram-sticks">
+            
+            <div class="topHalf">
+                <img class="card__image" src="Joburg.jpeg.opdownload" alt="Johannesburg">
+            </div>
+            <div class="bottomHalf">
+                <a href="./page-review.html">Open Reviews &#8594;</a>
+            </div>
+        </div>
+        <div class="card magsafe">
+            
+            <div class="topHalf">
+                <img class="card__image" src="PT.webp" alt="Pretoria">
+            </div>
+            <div class="bottomHalf">
+                <a href="./page-review.html">Open Reviews &#8594;</a>
+            </div>
+        </div>
+    </section>
+    <!-- end of Cards Taiwana-->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    <!-- FOOTER Start -->
+
+    <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>We are a diverse group of individuals, each feeding off the strengths of one another. Our skills  and talents
+                intertwined like the roots of a mighty oak tree that forms a strong and sturdy structure.
+                We aim to assist each other and bring out the best in those that work with us. The future of Tech is in your very hands.
+                Snatch it with both hands and run with it....
+              </p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>086 132 1321</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>cheatcode@cheatcode.tech</a>
+              </div>
+            </div>
+          </div> 
+          <div class="middle box">
+            <!-- insert following in NAV BAR Home, Meet our Start-ups, Events, Partners, Contact Us -->
+            <div class="topic">Home</div>
+            <div><a href="#">Meet Startups</a></div>
+            <div><a href="#">Events</a></div>
+            <div><a href="#">Partners</a></div>
+            <div><a href="#">Contact Us</a></div>
+
+          </div>
+          <div class="right box">
+            <div class="topic">Begin Journey</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="https://www.facebook.com/thisisrichfield/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/thisisrichfield/?hl=en"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/thisisrichfield?lang=en"><i class="fab fa-twitter"></i></a>
+
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright © 2022 <a href="#">cheatcode</a> All rights reserved</p>
+        </div>
+      </footer>
+
+    <!-- FOOTER End -->
+
+
+</body>
+</html>
