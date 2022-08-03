@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 *, *::after, *::before {
     box-sizing: border-box;
     padding: 0;
@@ -8,7 +10,7 @@
     /* Custom properties: */
 
     /* font-family */
-    --ff-sans-serif: "lato", sans-serif;
+    --ff-sans-serif: 'Poppins', sans-serif;
 
     /* font-size */
     --txt-sml: 1rem;
@@ -27,12 +29,11 @@
 }
 body {
     color: var(--dark-blue);
+    /* background: #111; */
     font-family: var(--ff-sans-serif);
     font-size: var(--txt-sml);
-    display: grid;
-    gap: 50px;
 }
-.container {
+.contain {
     /* padding-inline: 80px; */
     width: 95%;
     margin: 0 auto;
@@ -93,6 +94,7 @@ body {
     gap: 10px;
     padding-inline: 20px;
     line-height: 1.3;
+    margin-block: 50px;
     /* outline: 2px solid grey; */
 }
 .welcome h2 {
@@ -103,7 +105,7 @@ body {
 .grid-2 {
     text-align: center;
     height: 100%;
-    outline: 2px solid var(--dark-blue);
+    outline: 2px solid white;
 }
 .welcome .flex {
     display: flex;
@@ -117,7 +119,7 @@ body {
     margin-bottom: 50px;
 }
 .heading-text h2:last-of-type {
-    border-bottom: 3px solid var(--dark-blue);
+    border-bottom: 3px solid white;
 }
 .heading-text p {
     font-size: var(--txt-sml);
