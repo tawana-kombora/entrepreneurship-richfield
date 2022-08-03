@@ -32,6 +32,7 @@ body {
     /* background: #111; */
     font-family: var(--ff-sans-serif);
     font-size: var(--txt-sml);
+    text-align: justify;
 }
 .contain {
     /* padding-inline: 80px; */
