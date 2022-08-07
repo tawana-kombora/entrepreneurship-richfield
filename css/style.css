@@ -1,0 +1,147 @@
+::-webkit-scrollbar{
+    display: none;
+} 
+/* Start of styles */
+:root {
+    /* font-size */
+    --txt-16: 1rem;
+    --txt-20: 1.25rem;
+    --txt-24: 1.5rem;
+    --txt-32: 2rem;
+    --heading-sml: 1.75rem;
+    --heading-med: 2rem;
+    --heading-lrg: 3rem;
+
+    /* colours */
+    --blue: #0044ff;
+    --dark-blue: #000428;
+    --light-blue: #004e92;
+    --richfield-red: #e74033;
+    --blue-gradient: linear-gradient(-90deg, #000428, #004e92);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    
+    font-family: 'Open Sans', 'Raleway', sans-serif;
+}
+*::selection {
+    background: var(--richfield-red);
+    color: var(--dark-blue);
+}
+
+html {
+    font-size: 65%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    padding: 1.5rem 7%;
+    background: var(--blue-gradient);
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 2.5rem;
+}
+header .header-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+}
+header .header-nav ul li {
+    margin: 0 var(--txt-16);
+}
+header .header-nav ul li a {
+    font-size: var(--txt-32);
+    color: #fff;
+}
+ 
+header .header-nav ul li a.active, 
+header .header-nav ul li a:hover {
+    border-bottom: 2px solid var(--richfield-red);
+}
+
+header #login,
+header #menu {
+    font-size: var(--heading-lrg);
+    color: #fff;
+    cursor: pointer;
+}
+header #login:hover {
+    color: var(--richfield-red);
+}
+header #menu {
+    color: #fff;
+    display: none;
+    cursor: pointer;
+    font-size: var(--heading-lrg);
+}
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    header #menu {
+        display: block;
+    }
+    header .header-nav {
+        position: fixed;
+        top: -120%; left: 0;
+        width: 100%;
+        background: #888;
+    }
+    header .header-nav ul {
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+    header .header-nav ul li {
+        margin: 1.5rem 0;
+        text-align: center;
+        width: 100%;
+    }
+    header .header-nav ul li a {
+        font-size: 2.5rem;
+        display: block;
+    }
+    header .header-nav ul li a.active,
+    header .header-nav ul li a:hover {
+        color: var(--dark-blue);
+        border-bottom: none;
+    }
+    header .header-nav.nav-toggle {
+        top: 6.4rem;
+    }
+    .fa-times {
+        transform: rotate(180deg);
+    }
+}
