@@ -375,6 +375,7 @@ header #menu {
     justify-content: center;
     margin: 50px auto;
 }
+
 .slider-wrapper .slider-nav {
     display: flex;
     flex-flow: column;
@@ -424,6 +425,13 @@ header #menu {
     padding: 0;
     border-bottom: 2px solid #000;
 }
+.slide .content .btn {
+    margin-block: 10px;
+    width: 100%;
+}
+.slide .content .btn:hover {
+    background: var(--richfield-red);
+}
 .slide .image img {
     object-fit: cover;
     width: 650px;
@@ -431,7 +439,7 @@ header #menu {
     border-bottom: 2px solid #000;
 }
 .slide .content p {
-    padding-block: 20px;
+    padding-top: 20px;
 }
 
 /* what we offer section ends */
