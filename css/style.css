@@ -375,7 +375,7 @@ header #menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px auto;
+    margin: 25px auto;
 }
 
 .slider-wrapper .slider-nav {
