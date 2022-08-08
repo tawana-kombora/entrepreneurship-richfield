@@ -12,6 +12,6 @@ $(document).ready(function(){
     $(window).on('load scroll', function(){
         $('#menu').removeClass('fa-times');
         $('.header-nav').removeClass('nav-toggle');
-        $('.login-container').removeClass('popup');
+        // $('.login-container').removeClass('popup');
     });
 });
