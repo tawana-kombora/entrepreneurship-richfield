@@ -10,4 +10,4 @@ world’s GDP.
 > In terms of total early-stage entrepreneurial activity (TEA), the report found that a paltry 7% of 18-64 population in SA are starting or running new businesses.
 > Only 2.7% of respondents in SA are currently an owner-manager of an established business, i.e., owning and managing a running business that has paid salaries, wages, or any other payments to the owners for more than 42 months.
 
-This web portal aims to help fix taht.
+This web portal aims to help fix that.
