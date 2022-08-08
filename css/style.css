@@ -418,16 +418,17 @@ header #menu {
     color: #000;
 }
 .slide .content {
-    padding-inline: 50px;
+    padding-inline: 25px;
     font-size: 1.3rem;
 }
 .slide .content h3 {
     font-size: 3rem;
     text-align: center;
-    padding: 0;
+    padding-block: 20px;
     border-bottom: 2px solid #000;
 }
 .slide .content .btn {
+    text-align: center;
     margin-block: 10px;
     width: 100%;
 }
