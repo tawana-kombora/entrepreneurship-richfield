@@ -435,6 +435,9 @@ header #menu {
 .slide .content .btn:hover {
     background: var(--richfield-red);
 }
+.slide .content .btn a {
+    color: inherit;
+}
 .slide .image img {
     object-fit: cover;
     width: 650px;
